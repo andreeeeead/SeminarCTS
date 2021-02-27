@@ -1,4 +1,4 @@
-package ro.ase.cts.models;
+package models;
 
 public class ZooKeeper {
     private String name;

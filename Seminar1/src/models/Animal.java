@@ -1,4 +1,4 @@
-package ro.ase.cts.models;
+package models;
 
 public abstract class Animal {
     private String name;
