@@ -1,6 +1,6 @@
 package models;
 
-public abstract class Animal {
+public abstract class Animal implements Walking{
     private String name;
 
     public Animal(String name) {

@@ -22,5 +22,6 @@ public class Main {
         zoo.addAnimal(zebra2);
 
         zoo.feedAllAnimals();
+        zoo.walkingAnimals();
     }
 }

@@ -20,4 +20,9 @@ public class Giraffe extends Animal{
     public void setHeight(int height) {
         this.height = height;
     }
+
+    @Override
+    public void walking() {
+        System.out.println("The giraffe is walking...");
+    }
 }
