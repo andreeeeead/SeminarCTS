@@ -9,9 +9,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class AngajatReader {
-    public static List<Aplicant> readAngajati(String file) throws FileNotFoundException {
-        Scanner input2 = new Scanner(new File(file));
+public class AngajatReader extends AplicantReader{
+    public AngajatReader(String file) {
+        super(file);
+    }
+
+    @Override
+    public List<Aplicant> readAplicants() throws FileNotFoundException {
+        Scanner input2 = new Scanner(new File(super.file));
         input2.useDelimiter(",");
         List<Aplicant> angajati = new ArrayList<Aplicant>();
 

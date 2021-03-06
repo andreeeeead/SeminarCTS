@@ -9,9 +9,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class ElevReader {
-    public static List<Aplicant> readPupil(String file) throws FileNotFoundException {
-        Scanner input2 = new Scanner(new File(file));
+public class ElevReader extends AplicantReader{
+
+    public ElevReader(String file) {
+        super(file);
+    }
+
+    @Override
+    public List<Aplicant> readAplicants() throws FileNotFoundException {
+        Scanner input2 = new Scanner(new File(super.file));
         input2.useDelimiter(",|\n");
         List<Aplicant> elevi = new ArrayList<Aplicant>();
 
