@@ -40,7 +40,15 @@ public abstract class Aplicant{
 	public void setPunctaj(int punctaj) {
 		this.punctaj = punctaj;
 	}
-	
+
+	public String[] getDenumireProiect() {
+		return denumireProiect;
+	}
+
+	public void setDenumireProiect(String[] denumireProiect, int nrProiecte) {
+		this.denumireProiect = denumireProiect;
+		this.nr_proiecte = nrProiecte;
+	}
 
 	public Aplicant() {
 		super();
@@ -58,18 +66,16 @@ public abstract class Aplicant{
 	public int getNr_proiecte() {
 		return nr_proiecte;
 	}
-	public void setNr_proiecte(int nr_proiecte) {
-		this.nr_proiecte = nr_proiecte;
-	}
 
 	public abstract void afisareSumaFinantata();
+
 	public String creareStringPentruSumaFinantata(int suma, String tipAplicant) {
 		StringBuilder stringBuilder = new StringBuilder();
 		stringBuilder.append(tipAplicant).append(" ");
 		stringBuilder.append(this.getNume());
 		stringBuilder.append(this.getPrenume());
 		stringBuilder.append(" ");
-		stringBuilder.append(" primeste");
+		stringBuilder.append(" primeste ");
 		stringBuilder.append(suma);
 		stringBuilder.append(" Euro/zi in proiect.");
 		return stringBuilder.toString();
