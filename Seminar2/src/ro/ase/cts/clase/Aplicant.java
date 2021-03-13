@@ -7,9 +7,22 @@ public abstract class Aplicant {
 	protected String prenume;
 	protected int varsta;
 	protected int punctaj;
-	protected int nr_proiecte;
-	protected String[] denumireProiect;
+	protected int nrProiecte;
+	protected String[] denumiriProiecte;
 
+	public Aplicant() {
+		super();
+	}
+
+	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nrProiecte, String[] denumiriProiecte) {
+		super();
+		this.nume = nume;
+		this.prenume = prenume;
+		this.varsta = varsta;
+		this.punctaj = punctaj;
+		this.nrProiecte = nrProiecte;
+		this.denumiriProiecte = denumiriProiecte;
+	}
 
 	public String getNume() {
 		return nume;
@@ -35,6 +48,41 @@ public abstract class Aplicant {
 		this.varsta = varsta;
 	}
 
+	public int getPunctaj() {
+		return punctaj;
+	}
+
+	public void setPunctaj(int punctaj) {
+		this.punctaj = punctaj;
+	}
+
+	public int getNrProiecte() {
+		return nrProiecte;
+	}
+
+	public String[] getDenumiriProiecte() {
+		return denumiriProiecte;
+	}
+
+	public void setDenumireProiect(String[] denumireProiect, int nrProiecte) {
+		this.denumiriProiecte = denumireProiect;
+		this.nrProiecte = nrProiecte;
+	}
+
+	@Override
+	public String toString() {
+		final StringBuilder sb = new StringBuilder();
+		sb.append("nume='").append(nume).append('\'');
+		sb.append(", prenume='").append(prenume).append('\'');
+		sb.append(", varsta=").append(varsta);
+		sb.append(", punctaj=").append(punctaj);
+		sb.append(", nr_proiecte=").append(nrProiecte);
+		sb.append(", denumireProiect=").append(Arrays.toString(denumiriProiecte));
+		return sb.toString();
+	}
+
+	public abstract void afisareSumaFinantata();
+
 	public void afisareStatutProiect(Proiect proiect) {
 		StringBuilder stringBuilder = new StringBuilder();
 		stringBuilder.append("Aplicantul ")
@@ -44,42 +92,6 @@ public abstract class Aplicant {
 				.append(punctaj > proiect.getPragAcceptare() ? " a fost acceptat." : " nu a fost acceptat.");
 		System.out.println(stringBuilder.toString());
 	}
-
-
-	public int getPunctaj() {
-		return punctaj;
-	}
-	public void setPunctaj(int punctaj) {
-		this.punctaj = punctaj;
-	}
-
-	public String[] getDenumireProiect() {
-		return denumireProiect;
-	}
-
-	public void setDenumireProiect(String[] denumireProiect, int nrProiecte) {
-		this.denumireProiect = denumireProiect;
-		this.nr_proiecte = nrProiecte;
-	}
-
-	public Aplicant() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect) {
-		super();
-		this.nume = nume;
-		this.prenume = prenume;
-		this.varsta = varsta;
-		this.punctaj = punctaj;
-		this.nr_proiecte = nr_proiecte;
-		this.denumireProiect = denumireProiect;
-	}
-	public int getNr_proiecte() {
-		return nr_proiecte;
-	}
-
-	public abstract void afisareSumaFinantata();
 
 	public String creareStringPentruSumaFinantata(int suma, String tipAplicant) {
 		StringBuilder stringBuilder = new StringBuilder();
@@ -92,18 +104,4 @@ public abstract class Aplicant {
 		stringBuilder.append(" Euro/zi in proiect.");
 		return stringBuilder.toString();
 	}
-
-	@Override
-	public String toString() {
-		final StringBuilder sb = new StringBuilder();
-		sb.append("nume='").append(nume).append('\'');
-		sb.append(", prenume='").append(prenume).append('\'');
-		sb.append(", varsta=").append(varsta);
-		sb.append(", punctaj=").append(punctaj);
-		sb.append(", nr_proiecte=").append(nr_proiecte);
-		sb.append(", denumireProiect=").append(Arrays.toString(denumireProiect));
-		return sb.toString();
-	}
-
-
 }

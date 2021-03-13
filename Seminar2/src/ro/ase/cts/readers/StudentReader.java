@@ -10,27 +10,27 @@ import java.util.List;
 import java.util.Scanner;
 
 public class StudentReader extends AplicantReader{
-
+    
     public StudentReader(String file) {
         super(file);
     }
 
     @Override
     public List<Aplicant> readAplicants() throws FileNotFoundException {
-        Scanner input = new Scanner(new File(super.file));
-        input.useDelimiter(",|\n");
+        Scanner scanner = new Scanner(new File(super.file));
+        scanner.useDelimiter(",|\n");
         List<Aplicant> studenti = new ArrayList<Aplicant>();
 
-        while (input.hasNext()) {
+        while (scanner.hasNext()) {
             Student student = new Student();
-            super.citesteAplicant(input, student);
-            int an_studii = input.nextInt();
-            String facultate = (input.next()).toString();
-            student.setAn_studii(an_studii);
+            super.citesteAplicant(scanner, student);
+            int an_studii = scanner.nextInt();
+            String facultate = (scanner.next()).toString();
+            student.setAnStudii(an_studii);
             student.setFacultate(facultate);
             studenti.add(student);
         }
-        input.close();
+        scanner.close();
         return studenti;
     }
 }

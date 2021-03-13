@@ -1,40 +1,35 @@
 package ro.ase.cts.clase;
 
-import java.util.Arrays;
-
 public class Student extends Aplicant {
 	protected String facultate;
-	protected int an_studii;
+	protected int anStudii;
 	private static int sumaFinantata = 20;
+
+	public Student() {
+		super();
+
+	}
+
+	public Student(String nume, String prenume, int varsta, int punctaj, int nrProiecte, String[] denumiriProiecte, String facultate, int anStudii) {
+		super(nume,prenume,varsta,punctaj,nrProiecte,denumiriProiecte);
+		this.facultate = facultate;
+		this.anStudii = anStudii;
+	}
 	
 	public String getFacultate() {
 		return facultate;
 	}
+
 	public void setFacultate(String facultate) {
 		this.facultate = facultate;
 	}
-	public int getAn_studii() {
-		return an_studii;
-	}
-	public void setAn_studii(int an_studii) {
-		this.an_studii = an_studii;
+
+	public int getAnStudii() {
+		return anStudii;
 	}
 
-
-	public Student() {
-		super();
-		
-	}
-
-	@Override
-	public void afisareSumaFinantata() {
-		System.out.println(super.creareStringPentruSumaFinantata(this.sumaFinantata, "Studentul"));
-	}
-
-	public Student(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect, String facultate, int an_studii) {
-		super(nume,prenume,varsta,punctaj,nr_proiecte,denumireProiect);
-		this.facultate = facultate;
-		this.an_studii = an_studii;
+	public void setAnStudii(int anStudii) {
+		this.anStudii = anStudii;
 	}
 
 	@Override
@@ -44,7 +39,12 @@ public class Student extends Aplicant {
 				.append("Clasa=")
 				.append(this.facultate)
 				.append(", Tutore=")
-				.append(this.an_studii);
+				.append(this.anStudii);
 		return stringBuilder.toString();
+	}
+
+	@Override
+	public void afisareSumaFinantata() {
+		System.out.println(super.creareStringPentruSumaFinantata(this.sumaFinantata, "Studentul"));
 	}
 }
