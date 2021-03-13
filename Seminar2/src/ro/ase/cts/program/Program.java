@@ -17,6 +17,7 @@ public class Program {
 			List<Aplicant> aplicants = readAplicants(new AngajatReader("angajati.txt"));
 			for(Aplicant aplicant : aplicants) {
 				System.out.println(aplicant.toString());
+				aplicant.afisareSumaFinantata();
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

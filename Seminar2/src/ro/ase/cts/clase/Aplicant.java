@@ -27,6 +27,7 @@ public abstract class Aplicant{
 	public void setVarsta(int varsta) {
 		this.varsta = varsta;
 	}
+
 	public void statut(){
 		if(punctaj>80)
 			System.out.println("Aplicantul "+nume+" "+prenume+" a fost acceptat.");
@@ -40,9 +41,7 @@ public abstract class Aplicant{
 		this.punctaj = punctaj;
 	}
 	
-	
 
-	
 	public Aplicant() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -63,4 +62,16 @@ public abstract class Aplicant{
 		this.nr_proiecte = nr_proiecte;
 	}
 
+	public abstract void afisareSumaFinantata();
+	public String creareStringPentruSumaFinantata(int suma, String tipAplicant) {
+		StringBuilder stringBuilder = new StringBuilder();
+		stringBuilder.append(tipAplicant).append(" ");
+		stringBuilder.append(this.getNume());
+		stringBuilder.append(this.getPrenume());
+		stringBuilder.append(" ");
+		stringBuilder.append(" primeste");
+		stringBuilder.append(suma);
+		stringBuilder.append(" Euro/zi in proiect.");
+		return stringBuilder.toString();
+	}
 }
