@@ -1,12 +1,12 @@
 package ro.ase.cts.singleton.eager;
 
-public class ReceptieHotel {
-    private static final ReceptieHotel instance = new ReceptieHotel("Gigel", 1, "UpperHouse");
+public class ReceptieHotelEager {
+    private static final ReceptieHotelEager instance = new ReceptieHotelEager("Gigel", 1, "UpperHouse");
     private String numeReceptioner;
     private int etaj;
     private String numeHotel;
 
-    private ReceptieHotel(String numeReceptioner, int etaj, String numeHotel) {
+    private ReceptieHotelEager(String numeReceptioner, int etaj, String numeHotel) {
         this.numeReceptioner = numeReceptioner;
         this.etaj = etaj;
         this.numeHotel = numeHotel;
@@ -24,7 +24,7 @@ public class ReceptieHotel {
         this.numeHotel = numeHotel;
     }
 
-    public static ReceptieHotel getInstance() {
+    public static ReceptieHotelEager getInstance() {
         return instance;
     }
 

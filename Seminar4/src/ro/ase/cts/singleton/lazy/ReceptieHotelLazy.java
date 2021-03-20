@@ -1,12 +1,12 @@
 package ro.ase.cts.singleton.lazy;
 
-public class ReceptieHotel {
-    private static ReceptieHotel instance = null;
+public class ReceptieHotelLazy {
+    private static ReceptieHotelLazy instance = null;
     private String numeReceptioner;
     private int etaj;
     private String numeHotel;
 
-    private ReceptieHotel(String numeReceptioner, int etaj, String numeHotel) {
+    private ReceptieHotelLazy(String numeReceptioner, int etaj, String numeHotel) {
         this.numeReceptioner = numeReceptioner;
         this.etaj = etaj;
         this.numeHotel = numeHotel;
@@ -24,9 +24,9 @@ public class ReceptieHotel {
         this.numeHotel = numeHotel;
     }
 
-    public static synchronized ReceptieHotel getInstance(String numeReceptioner, int etaj, String numeHotel) {
+    public static synchronized ReceptieHotelLazy getInstance(String numeReceptioner, int etaj, String numeHotel) {
         if(instance == null) {
-            instance = new ReceptieHotel(numeReceptioner, etaj, numeHotel);
+            instance = new ReceptieHotelLazy(numeReceptioner, etaj, numeHotel);
         }
         return instance;
     }
