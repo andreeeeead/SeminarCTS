@@ -2,6 +2,7 @@ package ro.ase.cts.factorymethod.main;
 
 import ro.ase.cts.factorymethod.models.Factory;
 import ro.ase.cts.factorymethod.models.FundasFactory;
+import ro.ase.cts.factorymethod.models.MijlocasFactory;
 import ro.ase.cts.factorymethod.models.PortarFactory;
 
 public class Main {
@@ -11,5 +12,6 @@ public class Main {
     public static void main(String[] args) {
         afisareJucator(new PortarFactory(), "Gigel");
         afisareJucator(new FundasFactory(), "Ionel");
+        afisareJucator(new MijlocasFactory(), "Marian");
     }
 }
