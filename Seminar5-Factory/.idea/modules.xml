@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Seminar4 - Singleton.iml" filepath="$PROJECT_DIR$/Seminar4 - Singleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar5-Factory.iml" filepath="$PROJECT_DIR$/Seminar5-Factory.iml" />
     </modules>
   </component>
 </project>
