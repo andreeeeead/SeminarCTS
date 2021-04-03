@@ -19,13 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fac7291f-5c7e-42f1-a687-ffc86c64f134" name="Default Changelist" comment="implementare v2 builder">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/adapter/models/Bilet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/adapter/models/BiletAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/adapter/models/BiletOnline.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/adapter/program/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="fac7291f-5c7e-42f1-a687-ffc86c64f134" name="Default Changelist" comment="implementare adapter de clase">
+      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/adapter/models/BiletAdapterObiecte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ro/ase/cts/adapter/models/BiletAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ro/ase/cts/adapter/models/BiletAdapterClase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ro/ase/cts/adapter/program/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ro/ase/cts/adapter/program/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617446086083</updated>
-      <workItem from="1617446087144" duration="5542000" />
+      <workItem from="1617446087144" duration="5964000" />
     </task>
     <task id="LOCAL-00001" summary="implementare v1 builder">
       <created>1617449150786</created>
@@ -131,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617450188456</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="implementare adapter de clase">
+      <created>1617451767853</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617451767853</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,32 +155,37 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implementare v1 builder" />
     <MESSAGE value="implementare v2 builder" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementare v2 builder" />
+    <MESSAGE value="implementare adapter de clase" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementare adapter de clase" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1617451524735">
+    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1617451953335">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1617451524735" />
-    <state width="723" height="180" key="GridCell.Tab.0.bottom" timestamp="1617451314625">
+    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1617451953335" />
+    <state x="795" y="43" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1617451888674">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="180" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617451314625" />
-    <state width="723" height="180" key="GridCell.Tab.0.center" timestamp="1617451314625">
+    <state x="795" y="43" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1617451888674" />
+    <state width="723" height="180" key="GridCell.Tab.0.bottom" timestamp="1617451689359">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="180" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1617451314625" />
-    <state width="723" height="180" key="GridCell.Tab.0.left" timestamp="1617451314624">
+    <state width="723" height="180" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617451689359" />
+    <state width="723" height="180" key="GridCell.Tab.0.center" timestamp="1617451689359">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="180" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1617451314624" />
-    <state width="723" height="180" key="GridCell.Tab.0.right" timestamp="1617451314625">
+    <state width="723" height="180" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1617451689359" />
+    <state width="723" height="180" key="GridCell.Tab.0.left" timestamp="1617451689359">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="180" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1617451314625" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1617450218010">
+    <state width="723" height="180" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1617451689359" />
+    <state width="723" height="180" key="GridCell.Tab.0.right" timestamp="1617451689359">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1617450218010" />
+    <state width="723" height="180" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1617451689359" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1617451774563">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1617451774563" />
   </component>
 </project>

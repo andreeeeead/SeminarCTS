@@ -1,8 +1,8 @@
 package ro.ase.cts.adapter.models;
 
-public class BiletAdapter extends Bilet implements BiletOnline{
+public class BiletAdapterClase extends Bilet implements BiletOnline{
 
-    public BiletAdapter(int pret) {
+    public BiletAdapterClase(int pret) {
         super(pret);
     }
 
