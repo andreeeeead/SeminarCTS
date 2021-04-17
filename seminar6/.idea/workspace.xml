@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fac7291f-5c7e-42f1-a687-ffc86c64f134" name="Default Changelist" comment="implementare adapter de clase">
-      <change afterPath="$PROJECT_DIR$/src/ro/ase/cts/adapter/models/BiletAdapterObiecte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ro/ase/cts/adapter/models/BiletAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ro/ase/cts/adapter/models/BiletAdapterClase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ro/ase/cts/adapter/program/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ro/ase/cts/adapter/program/Main.java" afterDir="false" />
+    <list default="true" id="fac7291f-5c7e-42f1-a687-ffc86c64f134" name="Default Changelist" comment="implementare adapter de obiecte">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +56,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Licenta/Server" />
   </component>
   <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -86,17 +85,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main (1)" />
@@ -112,7 +100,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617446086083</updated>
-      <workItem from="1617446087144" duration="5964000" />
+      <workItem from="1617446087144" duration="6675000" />
+      <workItem from="1617727917772" duration="21000" />
     </task>
     <task id="LOCAL-00001" summary="implementare v1 builder">
       <created>1617449150786</created>
@@ -135,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617451767853</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implementare adapter de obiecte">
+      <created>1617452205453</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617452205453</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,12 +147,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implementare v1 builder" />
     <MESSAGE value="implementare v2 builder" />
     <MESSAGE value="implementare adapter de clase" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementare adapter de clase" />
+    <MESSAGE value="implementare adapter de obiecte" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementare adapter de obiecte" />
   </component>
   <component name="WindowStateProjectService">
     <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1617451953335">
@@ -167,25 +165,29 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="795" y="43" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1617451888674" />
-    <state width="723" height="180" key="GridCell.Tab.0.bottom" timestamp="1617451689359">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1617727937761">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="180" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617451689359" />
-    <state width="723" height="180" key="GridCell.Tab.0.center" timestamp="1617451689359">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1617727937761" />
+    <state width="723" height="180" key="GridCell.Tab.0.bottom" timestamp="1617457626382">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="180" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1617451689359" />
-    <state width="723" height="180" key="GridCell.Tab.0.left" timestamp="1617451689359">
+    <state width="723" height="180" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617457626382" />
+    <state width="723" height="180" key="GridCell.Tab.0.center" timestamp="1617457626382">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="180" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1617451689359" />
-    <state width="723" height="180" key="GridCell.Tab.0.right" timestamp="1617451689359">
+    <state width="723" height="180" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1617457626382" />
+    <state width="723" height="180" key="GridCell.Tab.0.left" timestamp="1617457626382">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="180" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1617451689359" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1617451774563">
+    <state width="723" height="180" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1617457626382" />
+    <state width="723" height="180" key="GridCell.Tab.0.right" timestamp="1617457626382">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1617451774563" />
+    <state width="723" height="180" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1617457626382" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1617452213839">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1617452213839" />
   </component>
 </project>
