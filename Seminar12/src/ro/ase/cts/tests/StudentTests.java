@@ -46,7 +46,7 @@ public class StudentTests {
         int nota2 = 7;
         student.adaugaNota(nota1);
         student.adaugaNota(nota2);
-        assertEquals((nota1+nota2)/2.0f, student.calculeazaMedie(),0.001);
+        assertEquals((nota1 + nota2) / 2.0f, student.calculeazaMedie(), 0.001);
     }
 
     @Test
@@ -64,5 +64,44 @@ public class StudentTests {
         student.adaugaNota(6);
         student.adaugaNota(10);
         assertFalse(student.areRestante());
+    }
+
+    @Test
+    public void testSetNume() {
+        Student student = new Student();
+        String nume = "gigel";
+        student.setNume(nume);
+        assertEquals(nume, student.getNume());
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void testGetNotaAruncaExceptie() {
+        Student student = new Student();
+        student.getNota(-1);
+    }
+
+    @Test
+    public void testGetNotaAruncaExceptieJU3() {
+        Student student = new Student();
+        try {
+            student.getNota(-1);
+            fail("Metoda nu arunca nicio exceptie");
+        } catch (IndexOutOfBoundsException exception) {
+
+        } catch (Exception exception) {
+            fail("Metoda nu arunca exceptie de tip IndexOutOfBoundsException");
+        }
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testNoteNegative() {
+        Student student = new Student();
+        student.adaugaNota(-4);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testNoteGT10() {
+        Student student = new Student();
+        student.adaugaNota(20);
     }
 }

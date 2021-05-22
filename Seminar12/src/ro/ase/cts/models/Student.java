@@ -30,7 +30,12 @@ public class Student {
     }
 
     public void adaugaNota(int nota){
-        note.add(nota);
+        if(nota > 0 && nota < 11) {
+            note.add(nota);
+        }
+        else {
+            throw new IllegalArgumentException();
+        }
     }
 
     public int getNota(int index){
@@ -38,6 +43,8 @@ public class Student {
             return note.get(index);
         }
         throw new IndexOutOfBoundsException();
+//        throw new IllegalArgumentException();
+//        return -1;
     }
 
     public float calculeazaMedie(){
