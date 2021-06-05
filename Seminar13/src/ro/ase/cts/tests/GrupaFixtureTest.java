@@ -7,7 +7,7 @@ import ro.ase.cts.clase.Student;
 
 import static org.junit.Assert.*;
 
-public class GrupaFictureTest {
+public class GrupaFixtureTest {
     Grupa grupa;
 
     @Before
