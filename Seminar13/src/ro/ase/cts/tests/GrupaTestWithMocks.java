@@ -1,6 +1,9 @@
 package ro.ase.cts.tests;
 
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
+import ro.ase.cts.categorii_teste.TesteGetPromovabilitate;
+import ro.ase.cts.categorii_teste.TesteUrgente;
 import ro.ase.cts.clase.Grupa;
 import ro.ase.cts.mocks.StudentDummy;
 import ro.ase.cts.mocks.StudentFake;
@@ -9,6 +12,7 @@ import ro.ase.cts.mocks.StudentStub;
 import static org.junit.Assert.*;
 
 public class GrupaTestWithMocks {
+    @Category(TesteUrgente.class)
     @Test
     public void testAdaugareStudentWithDummy() {
         StudentDummy studentDummy = new StudentDummy();
@@ -17,6 +21,7 @@ public class GrupaTestWithMocks {
         assertEquals(1, grupa.getStudenti().size());
     }
 
+    @Category({TesteGetPromovabilitate.class, TesteUrgente.class})
     @Test
     public void testGetPromovabilitateWithStub() {
         StudentStub studentStub = new StudentStub();
@@ -25,6 +30,7 @@ public class GrupaTestWithMocks {
         assertEquals(0, grupa.getPromovabilitate(), 0.001);
     }
 
+    @Category(TesteGetPromovabilitate.class)
     @Test
     public void testGetPromovabilitateWithFake() {
         Grupa grupa = new Grupa(1078);

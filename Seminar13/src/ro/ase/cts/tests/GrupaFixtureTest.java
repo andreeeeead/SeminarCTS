@@ -2,6 +2,8 @@ package ro.ase.cts.tests;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
+import ro.ase.cts.categorii_teste.TesteGetPromovabilitate;
 import ro.ase.cts.clase.Grupa;
 import ro.ase.cts.clase.Student;
 
@@ -22,6 +24,7 @@ public class GrupaFixtureTest {
         }
     }
 
+    @Category(TesteGetPromovabilitate.class)
     @Test(timeout=500)
     public void testGetPromovabilitatePerformance() {
         grupa.getPromovabilitate();
